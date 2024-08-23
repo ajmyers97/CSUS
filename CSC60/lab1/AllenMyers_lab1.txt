@@ -1,0 +1,17 @@
+Script started on Thu 05 Sep 2019 07:51:51 PM PDT
+[myersa@athena:17]> gcc lab1.c
+[myersa@athena:18]> a.out
+
+Lab1
+
+Hello World!
+Hi, Allen Myers.
+
+Life is fragile. We're not guaranteed
+a tomorrow, so give it everything you've got.
+-Tim Cook.
+
+[myersa@athena:19]> exit
+exit
+
+Script done on Thu 05 Sep 2019 07:52:08 PM PDT

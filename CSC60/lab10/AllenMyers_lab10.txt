@@ -1,0 +1,124 @@
+Script started on Wed 04 Dec 2019 12:04:23 PM PST
+[myersa@athena:21]> gcc lab10.c -Wall
+[myersa@athena:22]> a.out
+csc60msh> ls > lsout
+argc= 3 
+argv 0 = ls 
+argv 1 = > 
+argv 2 = lsout 
+argc = 3
+Child returned status: 0
+csc60msh> cat lsout
+argc= 2 
+argv 0 = cat 
+argv 1 = lsout 
+argc = 2
+AllenMyers_lab10.txt
+a.out
+execvp.c
+lab10.c
+Lab 10 Shell F19.docx
+lab9-10 RemoveCommentsGuide.docx
+lsout
+redir.c
+waitpid.c
+wcout
+Child returned status: 0
+csc60msh> ls > lsout>  > file1
+argc= 5 
+argv 0 = ls 
+argv 1 = > 
+argv 2 = lsout 
+argv 3 = > 
+argv 4 = file1 
+argc = 5
+Cannot output to more than one file.
+Child returned status: 256
+csc60msh> cat foox .txt
+argc= 2 
+argv 0 = cat 
+argv 1 = foo.txt 
+argc = 2
+cat: foo.txt: No such file or directory
+Child returned status: 256
+csc60msh> > lsout
+argc= 2 
+argv 0 = > 
+argv 1 = lsout 
+argc = 2
+No command entered.
+Child returned status: 256
+csc60msh> <lsout
+argc= 1 
+argv 0 = <lsout 
+argc = 1
+Error on the exec call
+Child returned status: 256
+csc60msh> wc < lsout
+argc= 3 
+argv 0 = wc 
+argv 1 = < 
+argv 2 = lsout 
+argc = 3
+ 10  14 129
+Child returned status: 0
+csc60msh> wc < lsout > wcout
+argc= 5 
+argv 0 = wc 
+argv 1 = < 
+argv 2 = lsout 
+argv 3 = > 
+argv 4 = wcout 
+argc = 5
+Child returned status: 0
+csc60msh> cat wcout
+argc= 2 
+argv 0 = cat 
+argv 1 = wcout 
+argc = 2
+ 10  14 129
+Child returned status: 0
+csc60msh> wc < lsout <w  wcout
+argc= 5 
+argv 0 = wc 
+argv 1 = < 
+argv 2 = lsout 
+argv 3 = < 
+argv 4 = wcout 
+argc = 5
+Cannot input from more than one file.
+Child returned status: 256
+csc60msh> cd ../lab1
+argc= 2 
+argv 0 = cd 
+argv 1 = ../lab1 
+argc = 2
+csc60msh> gcc lab1.c
+argc= 2 
+argv 0 = gcc 
+argv 1 = lab1.c 
+argc = 2
+Child returned status: 0
+csc60msh> a.out
+argc= 1 
+argv 0 = a.out 
+argc = 1
+
+Lab1
+
+Hello World!
+Hi, Allen Myers.
+
+Life is fragile. We're not guaranteed
+a tomorrow, so give it everything you've got.
+-Tim Cook.
+
+Child returned status: 0
+csc60msh> exit  
+argc= 1 
+argv 0 = exit 
+argc = 1
+[myersa@athena:23]> exit
+exit
+
+Script done on Wed 04 Dec 2019 12:06:06 PM PST

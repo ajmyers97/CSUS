@@ -1,0 +1,203 @@
+Script started on Fri 20 Sep 2019 08:46:27 PM PDT
+[myersa@athena:3]> history -c
+[myersa@athena:4]> cd csc60
+[myersa@athena:5]> mkdir lab2
+[myersa@athena:6]> cd lab2
+[myersa@athena:7]> pwd
+/gaia/class/student/myersa/csc60/lab2
+[myersa@athena:8]> mkdir aaa
+[myersa@athena:9]> cd aaa
+[myersa@athena:10]> pwd
+/gaia/class/student/myersa/csc60/lab2/aaa
+[myersa@athena:11]> cd ..
+[myersa@athena:12]> pwd
+/gaia/class/student/myersa/csc60/lab2
+[myersa@athena:13]> ls > fl[Kile1
+[myersa@athena:14]> cat file1
+aaa/
+file1
+[myersa@athena:15]> less file1
+[?1049h[?1h=aaa/
+file1
+[7mfile1 (END) [27m[K[K[?1l>[?1049l[myersa@athena:16]> file *
+aaa:   setgid directory
+file1: ASCII text
+[myersa@athena:17]> wc file1
+ 2  2 11 file1
+[myersa@athena:18]> wc *
+wc: aaa: Is a directory
+      0       0       0 aaa
+      2       2      11 file1
+      2       2      11 total
+[myersa@athena:19]> grep lab file1
+[myersa@athena:20]> cp file1 files[K2
+[myersa@athena:21]> cp file1 file2
+[myersa@athena:22]> ls
+aaa/  file1  file2
+[myersa@athena:23]> cd aaa
+[myersa@athena:24]> cp ..?[K/file1 .
+[myersa@athena:25]> ls
+file1
+[myersa@athena:26]> mv file1 files 2
+[myersa@athena:27]> mv file1 files[K2
+mv: cannot stat `file1': No such file or directory
+[myersa@athena:28]> mv files2 file2
+[myersa@athena:29]> ls
+file2
+[myersa@athena:30]> mv ..?[K/file1
+mv: missing destination file operand after `../file1'
+Try `mv --help' for more information.
+[myersa@athena:31]> mv ../file1 .
+[myersa@athena:32]> cd..
+cd..: Command not found.
+[myersa@athena:33]> cd ..
+[myersa@athena:34]> ls
+aaa/  file2
+[myersa@athena:35]> cd aaa
+[myersa@athena:36]> ls
+file1  file2
+[myersa@athena:37]> cmp file1 file2
+[myersa@athena:38]> ls > aaalist
+[myersa@athena:39]> cmp file1 aaalist
+file1 aaalist differ: byte 4, line 1
+[myersa@athena:40]> diff file1 aaalist
+1c1
+< aaa/
+---
+> aaalist
+2a3
+> file2
+[myersa@athena:41]> rm file1
+[myersa@athena:42]> ls
+aaalist  file2
+[myersa@athena:43]> ps u
+USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+myersa   15683  0.0  0.0   5496  1928 pts/7    Ss   20:44   0:00 -csh
+myersa   15853  0.0  0.0   4136   744 pts/7    S+   20:46   0:00 script AllenMye
+myersa   15855  0.0  0.0   4648   352 pts/7    S+   20:46   0:00 script AllenMye
+myersa   15856  0.0  0.0   5272  1752 pts/16   Ss   20:46   0:00 -sh -i
+myersa   16109  1.0  0.0   5096  1224 pts/16   R+   20:50   0:00 ps u
+[myersa@athena:44]> ps -l
+F S   UID   PID  PPID  C PRI  NI ADDR SZ WCHAN  TTY          TIME CMD
+0 S  8639 15856 15855  0  80   0 -  1318 -      pts/16   00:00:00 csh
+0 R  8639 16141 15856  0  80   0 -  1221 -      pts/16   00:00:00 ps
+[myersa@athena:45]> !!
+ps -l
+F S   UID   PID  PPID  C PRI  NI ADDR SZ WCHAN  TTY          TIME CMD
+0 S  8639 15856 15855  0  80   0 -  1318 -      pts/16   00:00:00 csh
+0 R  8639 16145 15856  0  80   0 -  1221 -      pts/16   00:00:00 ps
+[myersa@athena:46]> history
+     4	20:46	cd csc60
+     5	20:46	mkdir lab2
+     6	20:46	cd lab2
+     8	20:46	mkdir aaa
+    12	20:47	pwd
+    13	20:47	ls > file1
+    14	20:47	cat file1
+    15	20:47	less file1
+    16	20:47	file *
+    17	20:47	wc file1
+    18	20:48	wc *
+    19	20:48	grep lab file1
+    21	20:48	cp file1 file2
+    24	20:48	cp ../file1 .
+    26	20:48	mv file1 files2
+    27	20:49	mv file1 file2
+    28	20:49	mv files2 file2
+    30	20:49	mv ../file1
+    31	20:49	mv ../file1 .
+    32	20:49	cd..
+    33	20:49	cd ..
+    35	20:49	cd aaa
+    37	20:50	cmp file1 file2
+    38	20:50	ls > aaalist
+    39	20:50	cmp file1 aaalist
+    40	20:50	diff file1 aaalist
+    41	20:50	rm file1
+    42	20:50	ls
+    43	20:50	ps u
+    45	20:50	ps -l
+    46	20:50	history
+[myersa@athena:47]> cd ../..
+[myersa@athena:48]> pwd
+/gaia/class/student/myersa/csc60
+[myersa@athena:49]> cd lab1
+[myersa@athena:50]> pwd
+/gaia/class/student/myersa/csc60/lab1
+[myersa@athena:51]> head lab1.c[K[K[K[K[K[K[K[K[K[Kls
+AllenMyers_lab1.txt  a.out*  lab1.c
+[myersa@athena:52]> head lab1.c
+/*-------------------*/
+/* Allen Myers       */
+/* Lab 1             */
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void)
+{
+	printf("\nLab1\n\n");
+[myersa@athena:53]> q
+q: Command not found.
+[myersa@athena:54]> tail lab1.c
+	printf("Hi, Allen Myers.\n\n");
+	printf("Life is fragile. We're not guaranteed\n");
+	printf("a tomorrow, so give it everything you've got.\n");
+	printf("-Tim Cook.\n\n");
+
+
+	
+	return EXIT_SUCCESS;
+}
+/*-------------------*/
+[myersa@athena:55]> q
+q: Command not found.
+[myersa@athena:56]> ls -al | less
+[?1049h[?1h=total 24
+drwx--S--- 2 myersa stdcsc 4096 Sep  5 19:51 ./
+drwx--S--- 4 myersa stdcsc 4096 Sep 20 20:46 ../
+-rw------- 1 myersa stdcsc  336 Sep  5 19:52 AllenMyers_lab1.txt
+-rwx------ 1 myersa stdcsc 4834 Sep  5 19:51 a.out*
+-rw------- 1 myersa stdcsc  404 Sep  5 19:50 lab1.c
+[7m(END) [27m[K[K[?1l>[?1049l[myersa@athena:57]> history
+     4	20:46	cd csc60
+     5	20:46	mkdir lab2
+     6	20:46	cd lab2
+     8	20:46	mkdir aaa
+    13	20:47	ls > file1
+    14	20:47	cat file1
+    15	20:47	less file1
+    16	20:47	file *
+    17	20:47	wc file1
+    18	20:48	wc *
+    19	20:48	grep lab file1
+    21	20:48	cp file1 file2
+    24	20:48	cp ../file1 .
+    26	20:48	mv file1 files2
+    27	20:49	mv file1 file2
+    28	20:49	mv files2 file2
+    30	20:49	mv ../file1
+    31	20:49	mv ../file1 .
+    32	20:49	cd..
+    33	20:49	cd ..
+    35	20:49	cd aaa
+    37	20:50	cmp file1 file2
+    38	20:50	ls > aaalist
+    39	20:50	cmp file1 aaalist
+    40	20:50	diff file1 aaalist
+    41	20:50	rm file1
+    43	20:50	ps u
+    45	20:50	ps -l
+    47	20:51	cd ../..
+    49	20:51	cd lab1
+    50	20:51	pwd
+    51	20:51	ls
+    52	20:51	head lab1.c
+    54	20:51	tail lab1.c
+    55	20:51	q
+    56	20:52	ls -al | less
+    57	20:52	history
+[myersa@athena:58]> exit
+exit
+
+Script done on Fri 20 Sep 2019 08:52:26 PM PDT

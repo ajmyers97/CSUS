@@ -1,0 +1,24 @@
+Script started on Mon 23 Sep 2019 02:18:22 PM PDT
+[myersa@athena:21]> pwd
+/gaia/class/student/myersa/csc60/lab3
+[myersa@athena:22]> gcc lab3.c
+[myersa@athena:23]> a.out
+Allen Myers. Lab 3.
+
+Jane went to the store.
+
+My friend is 22 years old.
+
+"So many books, so little time." 
+ -Frank Zappa
+
+The average = 246.2
+
+The average = 246.237
+
+The average = 2.46e+02
+
+[myersa@athena:24]> exit
+exit
+
+Script done on Mon 23 Sep 2019 02:18:45 PM PDT

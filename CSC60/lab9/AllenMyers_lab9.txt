@@ -1,0 +1,41 @@
+Script started on Mon 18 Nov 2019 02:05:54 PM PST
+[myersa@athena:21]> gcc lab9.c -Wall
+[myersa@athena:22]> a.out
+csc60msh> 
+argc= 0 
+csc60msh>  
+argc= 0 
+csc60msh> pwd
+argc= 1 
+argv 0 = pwd 
+/gaia/class/student/myersa/csc60/lab9
+csc60msh> cd ..
+argc= 2 
+argv 0 = cd 
+argv 1 = .. 
+csc60msh> pwd
+argc= 1 
+argv 0 = pwd 
+/gaia/class/student/myersa/csc60
+csc60msh> cd lab9
+argc= 2 
+argv 0 = cd 
+argv 1 = lab9 
+csc60msh> pwd
+argc= 1 
+argv 0 = pwd 
+/gaia/class/student/myersa/csc60/lab9
+csc60msh> cd
+argc= 1 
+argv 0 = cd 
+csc60msh> pwd
+argc= 1 
+argv 0 = pwd 
+/gaia/class/student/myersa
+csc60msh> exit
+argc= 1 
+argv 0 = exit 
+[myersa@athena:23]> exit
+exit
+
+Script done on Mon 18 Nov 2019 02:06:46 PM PST
